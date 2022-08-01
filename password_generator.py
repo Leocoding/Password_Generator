@@ -3,6 +3,7 @@ import string
 
 LENGTH_MIN = 20
 
+
 class PasswordGenerator:
     lg = LENGTH_MIN
     randomizer = random.Random()
@@ -26,8 +27,8 @@ class PasswordGenerator:
                     3: punctuation
     }
 
-    def __init__(self, beta):
-        self.lg = LENGTH_MIN + beta
+    def __init__(self, length):
+        self.lg = length
 
     def gen_pass(self):
         password = ""
